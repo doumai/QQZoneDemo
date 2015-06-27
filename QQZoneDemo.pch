@@ -1,0 +1,34 @@
+//
+//  QQZoneDemo.pch
+//  QQZoneDemo
+//
+//  Created by 兜麦 on 15/6/26.
+//  Copyright (c) 2015年 ShengCheng. All rights reserved.
+//
+
+#ifndef QQZoneDemo_QQZoneDemo_pch
+#define QQZoneDemo_QQZoneDemo_pch
+
+#import "UIView+ExtensionFrame.h"
+#import "UIImage+Stretch.h"
+
+#define LSCColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+
+// 背景色
+#define LSCGlobalBgColor LSCColor(55, 55, 55)
+
+// 底部菜单按钮的尺寸
+#define LSCDockBottomMenuPortraitW 70.0
+#define LSCDockBottomMenuLanscapeW 90.0
+#define LSCDockBottomMenuH 70.0
+
+
+// 随机颜色
+#define LSCRandomColor [UIColor colorWithRed:arc4random()%255/255.0 green:arc4random()%255/255.0 blue:arc4random()%255/255.0 alpha:1.0]
+
+// 子控制器高度
+#define LSCContentView 650
+
+#define iOS7 ([[UIDevice currentDevice].systemVersion doubleValue] >= 7.0)
+
+#endif
